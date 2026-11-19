@@ -1,36 +1,165 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+# Student Management System
+
+A full-stack student administration platform designed to manage academic records and streamline educational institution workflows. The system provides dedicated modules for students, teachers, attendance, examinations, fees, academic records, and teacher assignments.
+
+## Overview
+
+The Student Management System centralizes academic and administrative operations through a web-based platform. It includes management interfaces and backend APIs for handling student information, teacher records, attendance, examinations, fees, and academic data.
+
+## Features
+
+### Student Management
+- Manage student records
+- View and organize student information
+- Student dashboard and portal
+
+### Teacher Management
+- Teacher records management
+- Teacher dashboard
+- Teacher assignments
+
+### Academic Management
+- Academic records management
+- Examination management
+- Examination results
+- Attendance tracking
+
+### Administration
+- Administration dashboard
+- Fee management
+- User authentication
+- Password reset functionality
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Next.js | Full-stack web framework |
+| React | Frontend UI |
+| TypeScript | Type-safe development |
+| Prisma ORM | Database ORM |
+| PostgreSQL | Database |
+| Node.js | Runtime environment |
+| Git & GitHub | Version control |
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js
+- npm
+- PostgreSQL
+- Git
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/AnanyaSRV/Student-Management-System.git
+```
+
+Navigate into the project:
+
+```bash
+cd Student-Management-System
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Environment Configuration
+
+Create the environment configuration file required by the project.
+
+Configure the necessary variables, including:
+
+- Database connection URL
+- Authentication-related configuration
+- Other application-specific settings
+
+Do not commit sensitive credentials, private keys, or database passwords.
+
+## Database Setup
+
+Ensure PostgreSQL is installed and running, and configure your database connection.
+
+Generate the Prisma client:
+
+```bash
+npx prisma generate
+```
+
+Apply migrations:
+
+```bash
+npx prisma migrate dev
+```
+
+## Run the Development Server
+
+Start the application:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```text
+Student-Management-System/
+├── app/
+│   ├── academic-records/
+│   ├── administration/
+│   ├── api/
+│   ├── attendance/
+│   ├── dashboard/
+│   ├── examinations/
+│   ├── fees/
+│   ├── student-portal/
+│   ├── students/
+│   ├── teacher-assignments/
+│   ├── teacher-dashboard/
+│   └── teachers/
+├── lib/
+├── prisma/
+│   ├── migrations/
+│   └── schema.prisma
+├── public/
+├── scripts/
+├── package.json
+├── package-lock.json
+├── next.config.ts
+├── prisma.config.ts
+├── tsconfig.json
+└── README.md
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Future Improvements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Advanced academic analytics and reporting
+- Enhanced student performance insights
+- Expanded administrative workflows
+- Additional dashboard visualizations
+- Further UI/UX enhancements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
+**Ananya SRV**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- GitHub: [@AnanyaSRV](https://github.com/AnanyaSRV)
+- Repository: [Student Management System](https://github.com/AnanyaSRV/Student-Management-System)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Developed as a full-stack project exploring student administration, academic management, database integration, and modern web application development.
